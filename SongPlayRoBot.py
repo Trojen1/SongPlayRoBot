@@ -40,12 +40,6 @@ def start(client, message):
 𝗜 𝗔𝗺 Ichika Nakano
 
 𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗡𝗮𝗺𝗲 𝗢𝗳 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁...😍😘[🥰](https://telegra.ph/file/1087746a87dcf619a1274.jpg)
-
-𝗧𝘆𝗽𝗲 /song 𝗦𝗼𝗻𝗴 𝗡𝗮𝗺𝗲
-
-𝐄𝐠. /song Faded
-
- My BF is @tr0j3n 💞
  
  Use /help To get More Infomation..."""
     message.reply_text(
@@ -70,24 +64,7 @@ def a(client, message):
         query += ' ' + str(i)
     print(query)
     m = message.reply('💗 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐭𝐡𝐞 𝐬𝐨𝐧𝐠...')
-    ydl_opts = {"format": "bestaudio",
-            "addmetadata": True,
-            "key": "FFmpegMetadata",
-            "writethumbnail": True,
-            "prefer_ffmpeg": True,
-            "geo_bypass": True,
-            "nocheckcertificate": True,
-            "postprocessors": [
-                {
-                    "key": "FFmpegExtractAudio",
-                    "preferredcodec": "mp3",
-                    "preferredquality": "320",
-                }
-            ],
-            "outtmpl": "%(id)s.mp3",
-            "quiet": True,
-            "logtostderr": False,
-               }
+    ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
         count = 0
