@@ -1,5 +1,10 @@
 # © TamilBots 2021-22
-
+import os
+import aiohttp
+import asyncio
+import json
+import sys
+import time
 from pyrogram import Client, filters
 from pyrogram.types import (
     InlineKeyboardButton,
