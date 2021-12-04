@@ -48,7 +48,8 @@ def start(client, message):
             [
                 [
                     InlineKeyboardButton('𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🌹', url='https://t.me/TamilSupport'),
-                    InlineKeyboardButton('𝐀𝐃𝐃 𝐌𝐄 💕', url='https://t.me/SongProBot?startgroup=true')
+                    InlineKeyboardButton('𝐀𝐃𝐃 𝐌𝐄 💕', url='https://t.me/SongProBot?startgroup=true'),
+                    InlineKeyboardButton('𝐒𝐄𝐀𝐑𝐂𝗛 💞', switch_inline_query_current_chat=query)
                 ]
             ]
         )
