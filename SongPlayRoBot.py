@@ -40,15 +40,17 @@ def start(client, message):
 
 𝐄𝐠. /song Faded
 
- My BF is @tr0j3n 💞"""
+ My BF is @tr0j3n 💞
+ 
+ Use /help To get More Infomation..."""
     message.reply_text(
         text=TamilBots, 
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🌹', url='https://t.me/TamilSupport'),
-                    InlineKeyboardButton('𝐀𝐃𝐃 𝐌𝐄 💕', url='https://t.me/SongProBot?startgroup=true'),
+                    InlineKeyboardButton('𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🌹', url='https://t.me/waifuNetwork'),
+                    InlineKeyboardButton('𝐀𝐃𝐃 𝐌𝐄 💕', url='https://t.me/itchikacutiebot?startgroup=true'),
                 ],
                 [InlineKeyboardButton('𝐒𝐄𝐀𝐑𝐂𝗛 💞 ', switch_inline_query_current_chat='')
                 ]
@@ -100,7 +102,7 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("🔎 𝐅𝐢𝐧𝐝𝐢𝐧𝐠 𝐀 𝐒𝐨𝐧𝐠 😤 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 [😘](https://media1.tenor.com/images/67192f90a9161d7004397a1ae74f9c25/tenor.gif)")
+    m.edit("🔎 𝐅𝐢𝐧𝐝𝐢𝐧𝐠 𝐀 𝐒𝐨𝐧𝐠 😤 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 [😘](https://64.media.tumblr.com/0cdaff3c33671b04a547bc918d15a3dd/f33cb7b9e1f05849-37/s500x750/9bcb3396357346723c62d3042ee0fbc848b867d5.gifv)")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
